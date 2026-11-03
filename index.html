@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>YOUR NAME // Portfolio</title>
+<title>centiKaS // Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -12,18 +12,6 @@
 </style>
 </head>
 <body>
-//-- Design for the actual lock screen.
-<div class="portfolio-lock" id="portfolio-lock">
-  <form class="lock-card" id="portfolio-lock-form" role="dialog" aria-modal="true" aria-labelledby="portfolio-lock-title">
-    <small>SECURE ACCESS // PORTFOLIO</small>
-    <h1 id="portfolio-lock-title">Access Required</h1>
-    <label for="portfolio-password">Enter password</label>
-    <input id="portfolio-password" name="password" type="password" autocomplete="current-password" required aria-describedby="portfolio-lock-error">
-    <button class="btn" type="submit">UNLOCK</button>
-    <p class="lock-error" id="portfolio-lock-error" role="status" aria-live="polite"></p>
-  </form>
-</div>
-//-- Reminder that above this can be removed later.
 <div class="wrap">
   <header class="hud">
     <span><button id="net" type="button">NET//ONLINE</button> &nbsp;<span id="clock">00:00</span></span>
@@ -31,23 +19,23 @@
   </header>
 </div>
 
-//-- Shows the homegreen buttons and gives them functions.
+<!--Shows the homegreen buttons and gives them functions.-->
 <main>
 <section class="view home" id="v-home">
   <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">KaS // Portfolio</h1>
   <nav class="home-menu" aria-label="Quickhacks">
     <div class="qh-head">Available quickhacks:</div>
     <div class="qh-ram">Cyberdeck RAM 12/12<i></i></div>
-    <a class="hack" href="#about"><span><span class="nm">About</span><small class="rd">READY</small></span><span class="ram">0</span><span class="bar"></span></a>
-    <a class="hack" href="#artwork"><span><span class="nm">Artwork</span><small class="rd">READY</small></span><span class="ram">5</span><span class="bar"></span></a>
-    <a class="hack" href="#projects"><span><span class="nm">Projects</span><small class="rd">READY</small></span><span class="ram">6</span><span class="bar"></span></a>
-    <a class="hack" href="#contacts"><span><span class="nm">Contacts</span><small class="rd">READY</small></span><span class="ram">7</span><span class="bar"></span></a>
-    <p>Click a hack, or press 1 to 4.</p>
+    <a class="hack" href="#about"><span><span class="nm">About Me</span><small class="rd">READY</small></span><span class="ram">3</span><span class="bar"></span></a>
+    <a class="hack" href="#artwork"><span><span class="nm">Artwork</span><small class="rd">READY</small></span><span class="ram">7</span><span class="bar"></span></a>
+    <a class="hack" href="#projects"><span><span class="nm">Projects</span><small class="rd">READY</small></span><span class="ram">4</span><span class="bar"></span></a>
+    <a class="hack" href="#contacts"><span><span class="nm">Contacts</span><small class="rd">READY</small></span><span class="ram">5</span><span class="bar"></span></a>
+    <p>Processing your quickhack. Press 1 to 4 or click.</p>
   </nav>
   <aside class="scan" id="scan" aria-hidden="true"></aside>
 </section>
 
-//-- Shows the art and text for the about me page.
+<!--Shows the art and text for the about me page.-->
 <section class="view wrap" id="v-about" hidden>
   <h2>About </h2>
   <div class="ab">
@@ -56,7 +44,7 @@
       <div class="pfp"><img src="artwork/about-profile.jpg" alt="Blue-haired plush figure in a black outfit" loading="lazy"></div>
       <h3>KaS</h3>
       <p>Come back later..?</p>
-      <dl><dt>Based in</dt><dd>Your city</dd><dt>Influences</dt><dd>Sui Ishida, Ado</dd></dl>
+      <dl><dt>Based in</dt><dd>Your city?</dd><dt>Influences</dt><dd>Sui Ishida, Ado</dd></dl>
     </div>
   </div>
 </section>
@@ -71,7 +59,7 @@
   <div class="split hk" id="proj"><div class="qlist"></div><div class="vw"></div></div>
 </section>
 
-//-- Shows descriptions on the messages/contacts page.
+<!--Shows descriptions on the messages/contacts page.-->
 <section class="view wrap hk" id="v-contacts" hidden>
   <h2>Contacts </h2>
   <div class="msgr" id="msgr">
@@ -89,7 +77,7 @@
 </main>
 <div class="toast" id="toast" role="status"></div>
 
-//-- Sets variables that work throughout the website.
+<!--Sets variables that work throughout the website.-->
 <script>
 (function(){
 var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -176,13 +164,13 @@ var C=[
    {label:"Got any secrets?",me:"Got any secrets?",re:[A("I don't know... Do I choomie?")]}]},
  {name:"Email",time:"2d",call:MAIL,msgs:[A("Fastest way to reach me."),A(EMAIL,MAIL),A("I reply within a couple of days.")],
   choices:[{label:"Will you actually reply?",me:"Will you actually reply?",re:[A("Eventually. Probably. I promise.")]}]},
- {name:"Instagram",time:"5d",call:"#",msgs:[A("@yourhandle","#"),A("Daily sketches, posted at strange hours.")],
+ {name:"Instagram",time:"5d",call:"#",msgs:[A("@centiKaS","#"),A("Daily sketches, posted at strange hours.")],
   choices:[{label:"Do you post WIPs?",me:"Do you post WIPs?",re:[A("Every messy one. That’s the fun part.")]}]},
- {name:"X",time:"1w",call:"#",msgs:[A("@yourhandle","#"),A("Work in progress, late-night thoughts, the odd meme.")],
+ {name:"X",time:"1w",call:"#",msgs:[A("@centiKaS_","#"),A("Work in progress, late-night thoughts, the odd meme.")],
   choices:[{label:"Do you reply to DMs?",me:"Do you reply to DMs?",re:[A("Yes. Slowly. With too many exclamation marks.")]}]},
  {name:"Where to find me",time:"2w",msgs:[A("Based in Your City."),A("Conventions and events: add your next ones here."),A("Otherwise I’m at my desk with the music too loud.")],
   choices:[{label:"Can I find you at a con?",me:"Can I find you at a con?",re:[A("Look for the person with ink on their hands.")]}]},
- {name:"Unknown",time:"LOCK",locked:true,msgs:[A("You found the back channel. Nobody finds the back channel."),A("Secret one: I draw everything twice because the first one is always wrong."),A("Secret two: this site runs on spray paint and caffeine."),U("Your secret’s safe with me."),A("It better be. I know where you scroll.")],
+ {name:"Unknown",time:"LOCK",locked:true,msgs:[A("You found the back channel. Nobody finds the back channel."),A("I don't know choomie.. Do I?"),U("Alright..?"),A("I know where you scroll.")],
   choices:[{label:"Tell me more.",me:"Tell me more.",re:[A("Another time. Come back after dark.")]}]}
 ];
 function lockedNow(c){return c.locked&&!unlocked}
@@ -225,18 +213,6 @@ function unlock(){if(unlocked)return;unlocked=true;renderLog();toast("Access gra
 var keys=[];addEventListener("keydown",function(e){if(!$('portfolio-lock').hidden)return;keys.push(e.key.length===1?e.key.toLowerCase():e.key);keys=keys.slice(-3);  if(keys.join("")==="ado")unlock()});
 var taps=0;$("net").addEventListener("click",function(){if(++taps>=5)unlock()});
 })();
-</script>
-<script>
-//-- Password locked homescreen.
-(function(){
-  var PASSWORD="PORTFOLIO2027",key="portfolio-unlocked",gate=document.getElementById("portfolio-lock"),form=document.getElementById("portfolio-lock-form"),input=document.getElementById("portfolio-password"),error=document.getElementById("portfolio-lock-error");
-  var page=Array.prototype.filter.call(document.body.children,function(el){return el!==gate});
-  function setLocked(locked){gate.hidden=!locked;page.forEach(function(el){el.inert=locked});if(locked)input.focus()}
-  var unlocked=false;try{unlocked=sessionStorage.getItem(key)==="1"}catch(e){}
-  setLocked(!unlocked);
-  form.addEventListener("submit",function(e){e.preventDefault();if(input.value===PASSWORD){try{sessionStorage.setItem(key,"1")}catch(e){}error.textContent="";setLocked(false)}else{error.textContent="ACCESS DENIED. Try again.";input.value="";input.focus()}})
-})();
-//-- Reminder that above this can be removed later.
 </script>
 </body>
 </html>

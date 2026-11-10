@@ -83,7 +83,7 @@
 var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
 var wait=function(ms){return new Promise(function(r){setTimeout(r,reduce?0:ms)})};
 var $=function(id){return document.getElementById(id)};
-var EMAIL="centiKaS@example.com";
+var EMAIL="ivy.fieldurry@gmail.com";
 
 //-- Makes the clock actually function.
 function tick(){var d=new Date();$("clock").textContent=String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0")}tick();setInterval(tick,30000);
